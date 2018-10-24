@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WEDWEDScratchCardViewView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="qdG-oa-gFy"/>
+                <outlet property="imageView_mask" destination="qOh-Dm-Uoa" id="Q0x-60-VfK"/>
+                <outlet property="imageView_real" destination="afp-BT-3au" id="boD-36-JCo"/>
+                <outlet property="label_title" destination="cFE-2T-s7u" id="4wt-Br-36Z"/>
+                <outlet property="mainView" destination="2qL-aT-ZnY" id="NuT-uZ-bue"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="303"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qOh-Dm-Uoa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="303"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qL-aT-ZnY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="303"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您，获取一等奖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFE-2T-s7u">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="303"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="afp-BT-3au">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="303"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cFE-2T-s7u" secondAttribute="trailing" id="G26-mC-mSq"/>
+                        <constraint firstItem="afp-BT-3au" firstAttribute="height" secondItem="cFE-2T-s7u" secondAttribute="height" id="JFf-bj-bLL"/>
+                        <constraint firstItem="afp-BT-3au" firstAttribute="leading" secondItem="cFE-2T-s7u" secondAttribute="leading" id="OfW-GQ-E6W"/>
+                        <constraint firstAttribute="bottom" secondItem="cFE-2T-s7u" secondAttribute="bottom" id="UWX-6D-Mfw"/>
+                        <constraint firstItem="cFE-2T-s7u" firstAttribute="leading" secondItem="2qL-aT-ZnY" secondAttribute="leading" id="tiO-JV-Kpf"/>
+                        <constraint firstItem="cFE-2T-s7u" firstAttribute="top" secondItem="2qL-aT-ZnY" secondAttribute="top" id="uPA-LP-1B8"/>
+                        <constraint firstItem="afp-BT-3au" firstAttribute="top" secondItem="cFE-2T-s7u" secondAttribute="top" id="vzs-PC-sOf"/>
+                        <constraint firstItem="afp-BT-3au" firstAttribute="width" secondItem="cFE-2T-s7u" secondAttribute="width" id="yKm-xA-Lvp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2qL-aT-ZnY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7Ff-Oe-fSt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qOh-Dm-Uoa" secondAttribute="bottom" id="Bug-bp-ysf"/>
+                <constraint firstItem="qOh-Dm-Uoa" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="BxF-2E-gfN"/>
+                <constraint firstItem="qOh-Dm-Uoa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="IYd-wV-QVB"/>
+                <constraint firstItem="qOh-Dm-Uoa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Jih-M8-7me"/>
+                <constraint firstAttribute="bottom" secondItem="2qL-aT-ZnY" secondAttribute="bottom" id="URY-Ib-Fgc"/>
+                <constraint firstItem="2qL-aT-ZnY" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Y19-CE-Dm0"/>
+                <constraint firstItem="2qL-aT-ZnY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mjT-qX-7GT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-34.399999999999999" y="156.07196401799101"/>
+        </view>
+    </objects>
+</document>
