@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Chasingdreamboy" => "wangerdong@treefinance.com.cn" }
+  s.author             = { "Chasingdreamboy" => "https://github.com/Chasingdreamboy" }
   # Or just: s.author    = "Chasingdreamboy"
   # s.authors            = { "Chasingdreamboy" => "wangerdong@treefinance.com.cn" }
   # s.social_media_url   = "http://twitter.com/Chasingdreamboy"
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ScratchCard/ScratchCard/Files/*.{h,m}"
+  s.source_files  = "ScratchCard/ScratchCard/Files/*.{h,m,xib}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -106,7 +106,8 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = ['ScratchCard/ScratchCard/Assets.xcassets', 'ScratchCard/ScratchCard/Files/*.{xib}']
+  # s.resources = ['ScratchCard/ScratchCard/Assets.xcassets', 'ScratchCard/ScratchCard/Files/*.{xib}']
+    s.resources = ['ScratchCard/ScratchCard/Assets.xcassets']
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
